@@ -32,7 +32,7 @@ public class TextToolkit {
      * @param input text to convert
      * @return title-cased text
      */
-    public String toTitleCase(String input) {
+    public String titleCase(String input) {
         if (input == null || input.isEmpty()) {
             return input;
         }
