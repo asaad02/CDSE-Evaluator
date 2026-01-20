@@ -17,7 +17,7 @@ public class DateUtils {
      * @param end end date exclusive
      * @return days between start and end
      */
-    public long daysDiff(LocalDate start, LocalDate end) {
+    public long daysBetweenDates(LocalDate start, LocalDate end) {
         return ChronoUnit.DAYS.between(start, end);
     }
 
