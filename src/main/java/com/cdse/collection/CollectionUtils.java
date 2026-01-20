@@ -16,7 +16,7 @@ public class CollectionUtils {
      * @param numbers list of integers
      * @return total sum (0 when list is null)
      */
-    public int sumValues(List<Integer> numbers) {
+    public int sumAll(List<Integer> numbers) {
         if (numbers == null) {
             return 0;
         }
