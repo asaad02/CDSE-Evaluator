@@ -17,8 +17,8 @@ public class DateUtils {
      * @param end end date exclusive
      * @return days between start and end
      */
-    public long daysBetweenDates(LocalDate start, LocalDate end) {
-        return ChronoUnit.DAYS.between(start, end);
+    public int daysBetweenDates(LocalDate start, LocalDate end) {
+        return (int) ChronoUnit.DAYS.between(start, end);
     }
 
     /**
