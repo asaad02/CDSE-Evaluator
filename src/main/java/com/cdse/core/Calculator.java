@@ -47,8 +47,8 @@ public class Calculator {
      * @return the quotient as a double
      * @throws IllegalArgumentException when divisor is zero
      */
-    public double divideSafely(double dividend, double divisor) {
-        if (divisor == 0) {
+    public double divideSafely(double dividend, double divisor, boolean strict) {
+        if (strict && divisor == 0) {
             throw new IllegalArgumentException("Divisor must not be zero");
         }
         return dividend / divisor;
