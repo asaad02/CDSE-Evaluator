@@ -49,7 +49,7 @@ public class TextToolkit {
      * @param input text to evaluate
      * @return true when input reads the same forwards and backwards
      */
-    public boolean isPalindrome(String input) {
+    public boolean palindromeCheck(String input) {
         if (input == null) {
             return false;
         }
