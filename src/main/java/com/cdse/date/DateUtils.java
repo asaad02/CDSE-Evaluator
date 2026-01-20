@@ -50,8 +50,8 @@ public class DateUtils {
      * @param pattern formatter pattern
      * @return formatted date string
      */
-    public String format(LocalDate date, String pattern) {
-        return date.format(DateTimeFormatter.ofPattern(pattern));
+    public String format(LocalDate date, DateTimeFormatter formatter) {
+        return date.format(formatter);
     }
 
     /**
