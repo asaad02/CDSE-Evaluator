@@ -57,23 +57,6 @@ public class CollectionUtils {
         return result;
     }
 
-    /**
-     * Merges two lists into a new list.
-     *
-     * @param first first list
-     * @param second second list
-     * @return merged list containing elements of both
-     */
-    public List<String> merge(List<String> first, List<String> second) {
-        List<String> merged = new ArrayList<>();
-        if (first != null) {
-            merged.addAll(first);
-        }
-        if (second != null) {
-            merged.addAll(second);
-        }
-        return merged;
-    }
 
     /**
      * Splits a list into chunks of the given size.

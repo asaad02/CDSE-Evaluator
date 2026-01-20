@@ -1,7 +1,9 @@
 package com.cdse.text;
 
 import java.text.Normalizer;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
@@ -84,5 +86,23 @@ public class TextToolkit {
         String normalized = Normalizer.normalize(noWhitespace, Normalizer.Form.NFD);
         String slug = NON_LATIN.matcher(normalized).replaceAll("");
         return slug.toLowerCase(Locale.getDefault());
+    }
+
+    /**
+     * Merges two string lists into a new list.
+     *
+     * @param first first list
+     * @param second second list
+     * @return merged list containing elements of both
+     */
+    public List<String> mergeStrings(List<String> first, List<String> second) {
+        List<String> merged = new ArrayList<>();
+        if (first != null) {
+            merged.addAll(first);
+        }
+        if (second != null) {
+            merged.addAll(second);
+        }
+        return merged;
     }
 }
