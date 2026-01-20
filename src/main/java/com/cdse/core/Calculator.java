@@ -13,8 +13,8 @@ public class Calculator {
      * @param b second addend
      * @return the sum of a and b
      */
-    public int addNumbers(int a, int b) {
-        return a + b;
+    public int addNumbers(int left, int right) {
+        return left + right;
     }
 
     /**
