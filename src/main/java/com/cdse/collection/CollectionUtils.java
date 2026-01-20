@@ -43,7 +43,7 @@ public class CollectionUtils {
      * @param values list of strings
      * @return distinct values
      */
-    public List<String> distinct(List<String> values) {
+    public List<String> unique(List<String> values) {
         if (values == null) {
             return List.of();
         }
