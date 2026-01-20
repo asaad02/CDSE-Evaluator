@@ -19,7 +19,7 @@ public class TextToolkit {
      * @param input text to reverse
      * @return reversed text
      */
-    public String reverseText(String input) {
+    public String reverseContent(String input) {
         if (input == null) {
             return null;
         }
