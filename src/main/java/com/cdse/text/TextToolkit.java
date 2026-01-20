@@ -76,7 +76,7 @@ public class TextToolkit {
      * @param input text to slugify
      * @return slugified text
      */
-    public String slugify(String input) {
+    public String slug(String input) {
         if (input == null) {
             return null;
         }
