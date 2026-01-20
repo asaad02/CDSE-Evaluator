@@ -35,8 +35,8 @@ public class Calculator {
      * @param b second factor
      * @return the product first * second
      */
-    public int multiply(int a, int b) {
-        return a * b;
+    public int multiply(int x, int y) {
+        return x * y;
     }
 
     /**
