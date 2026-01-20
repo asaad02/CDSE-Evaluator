@@ -24,7 +24,7 @@ public class Calculator {
      * @param b subtrahend
      * @return the difference minuend - subtrahend
      */
-    public int subtract(int a, int b) {
+    public int difference(int a, int b) {
         return a - b;
     }
 
