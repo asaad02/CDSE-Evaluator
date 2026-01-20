@@ -87,7 +87,7 @@ public class Calculator {
      * @param b second value
      * @return arithmetic mean of a and b
      */
-    public double average(int a, int b) {
+    public double mean(int a, int b) {
         return (a + b) / 2.0;
     }
 }
