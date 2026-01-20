@@ -40,9 +40,19 @@ public class TextToolkit {
         }
         String[] words = input.toLowerCase(Locale.getDefault()).split(" ");
         return Arrays.stream(words)
-                .map(w -> w.isEmpty() ? w : Character.toUpperCase(w.charAt(0)) + w.substring(1))
+                .map(this::capitalizeWord)
                 .reduce((a, b) -> a + " " + b)
                 .orElse("");
+    }
+
+    /**
+     * Helper to capitalize a single word (first letter uppercased).
+     *
+     * @param w input word
+     * @return capitalized word or original when empty
+     */
+    private String capitalizeWord(String w) {
+        return w == null || w.isEmpty() ? w : Character.toUpperCase(w.charAt(0)) + w.substring(1);
     }
 
     /**
