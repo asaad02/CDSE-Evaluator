@@ -50,7 +50,7 @@ public class DateUtils {
      * @param pattern formatter pattern
      * @return formatted date string
      */
-    public String formatDate(LocalDate date, String pattern) {
+    public String format(LocalDate date, String pattern) {
         return date.format(DateTimeFormatter.ofPattern(pattern));
     }
 
