@@ -30,7 +30,7 @@ public class CollectionUtils {
      * @return maximum value
      * @throws IllegalArgumentException when list is null or empty
      */
-    public int max(List<Integer> numbers) {
+    public int maxValue(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty()) {
             throw new IllegalArgumentException("numbers must not be null or empty");
         }
