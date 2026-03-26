@@ -2,7 +2,7 @@
 
 This document intentionally references code symbols to evaluate drift detection after refactorings. The references below reflect the current code state prior to additional refactoring commits.
 
-Calculator.addNumbers(int left, int right)
+Calculator#addNumbers(int left, int right)
 Calculator.subtract(int a, int b)
 Calculator.multiply(int a, int b)
 Calculator.divideSafely(double dividend, double divisor)
